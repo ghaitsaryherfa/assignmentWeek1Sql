@@ -125,5 +125,19 @@ select * from employees e
 create index jobTitle on employees(jobTitle)
 
 
+#Query 8 insert
+select * from offices o  
+
+insert into offices 
+(officeCode, city, phone, addressLine1, addressLine2, state, country, postalCode, territory)
+values
+(8,'Bandung', '+628512345156', '17A Panyileukan', 'Block 7', null, 'Indonesia', '40614', "IN")
+
+#Query 9 update
+update offices set city = "NYC", state = "Washington DC" 
+where postalCode = "EC2N 1HN"
+
+#Query 9 delete 
+delete from offices where city = "Bandung"
 
 
